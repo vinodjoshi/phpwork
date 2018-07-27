@@ -6,7 +6,7 @@ class Database
 {
 	private $host = 'localhost';
 	private $user = 'root';
-	private $pass = '123654';
+	private $pass = '123';
 	private $dbname = 'phpwork';
 
 	private $dbh;
@@ -31,5 +31,10 @@ class Database
 			$this->error = $e->getMessage();
 
 		}
+	}
+
+	public function query($query)
+	{
+		$this->stmt = 
 	}
 }
